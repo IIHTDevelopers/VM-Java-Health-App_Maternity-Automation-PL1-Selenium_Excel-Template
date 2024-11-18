@@ -19,12 +19,166 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class maternity_page extends StartupPage {
-	
-	public By getAnchorTagLocatorByText(String anchorTagName) {
-		return null;
+
+	public By getUsernameTextfieldLocator() {
+		return By.id(" ");
 	}
 
-	
+	public By getPasswordTextboxLocator() {
+		return By.xpath(" ");
+	}
+
+	public By getSignInButtonLocator() {
+		return By.xpath(" ");
+	}
+
+	public By getMaternityLocator() {
+		return By.xpath(" ");
+	}
+
+	public By getMaternityDropdownOptionLocator(String subModuleName) {
+		return By.xpath("  ");
+	}
+
+	public By getMaternityBoxLocator() {
+		return By.xpath("  ");
+	}
+
+	public By getAnchorTagLocatorByText(String anchorTagName) {
+		return By.xpath("  ");
+	}
+
+	public By getButtonLocatorsBytext(String buttonName) {
+		return By.xpath("  ");
+	}
+
+	public By searchBarId() {
+		return By.id("  ");
+	}
+
+	public By editInformationOfField() {
+		return By.id("  ");
+	}
+
+	public By getDateRangeButton() {
+		return By.cssSelector("  ");
+	}
+
+	public By getAllMaternityPatientCheckbox() {
+		return By.xpath("  ");
+	}
+
+	public By calendarFromDropdown() {
+		return By.xpath("(  ");
+	}
+
+	public By calendarToDropdown() {
+		return By.xpath("  ");
+	}
+
+	public By getStarIconLocator() {
+		return By.xpath("  ");
+	}
+
+	public By getEditHusbandField() {
+		return By.xpath("  ");
+	}
+
+	public By getRowsOfResult() {
+		return By.xpath("  ");
+	}
+
+	public By getHusbandNameByRowIndex(String index) {
+		return By.xpath("  ");
+	}
+
+	public By getActualHusbandName() {
+		return By.xpath("  ");
+	}
+
+	public By getActualEddDates() {
+		return By.xpath("  ");
+	}
+
+	public By getImageLoader() {
+		return By.cssSelector("  ");
+	}
+
+	public By favouriteOrStarIconMedicalRecord() {
+		return By.xpath("  ");
+	}
+
+	public By getColumnDividerOnRightByColumnId(String columnId) {
+		return By.xpath("  ");
+	}
+
+	public By getColumnHeaderByColumnId(String columnId) {
+		return By.xpath("  ");
+	}
+
+	public By getCurrentPage() {
+		return By.xpath("  ");
+	}
+
+	public By getTotalRecordCount() {
+		return By.xpath("  ");
+	}
+
+	public By getMaternityAllowanceBox() {
+		return By.xpath("  ");
+	}
+
+	public By getSearchFromAllPatientsCheckbox() {
+		return By.xpath("  ");
+	}
+
+	public By selectUserNameDropdown() {
+		return By.xpath("  ");
+	}
+
+	public By getUpdateDetailsModal() {
+		return By.xpath("  ");
+	}
+
+	public By getLocatorById(String elementId) {
+		return By.id(null);
+	}
+
+	public By getPopUpMessageText(String msgStatus, String messageText) {
+		return By.xpath("  ");
+	}
+
+	public By popupCloseButton() {
+		return By.cssSelector("  ");
+	}
+
+	public By getMaternityANCModal() {
+		return By.xpath("  ");
+	}
+
+	public By getMaternityRegisterModal() {
+		return By.xpath("  ");
+	}
+
+	public By getConcludeAlertModal() {
+		return By.xpath("  ");
+	}
+
+	public By getRemoveAlertModal() {
+		return By.xpath("  ");
+	}
+
+	public By getLocatorByPlaceholder(String elementPlaceholder) {
+		return By.cssSelector("  ");
+	}
+
+	public By ancVisitNumber() {
+		return By.cssSelector("  ");
+	}
+
+	public By getGenderLocator() {
+		return By.cssSelector("  ");
+	}
 
 	public maternity_page(WebDriver driver) {
 		super(driver);
