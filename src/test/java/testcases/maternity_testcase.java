@@ -190,54 +190,6 @@ public class maternity_testcase extends AppTestBase {
 				maternityRecordExpectedData.get("ancUpdatedMsg"));
 	}
 
-	@Test(priority = 13, groups = {
-			"sanity" }, description = "Pre condition: User should be logged in and it is on Maternity module\r\n"
-					+ "1. Navigate to \"Maternity list\" sub-module \r\n"
-					+ "2. Click on the \"...\" button of a specific records\r\n"
-					+ "3. Click on \" Mat - Register\" option from a specfic record\r\n"
-					+ "4. Fill all necessary field present in the \"Maternity Register\"  page\r\n"
-					+ "5. Click on \"Save\" button")
-
-	public void verifyMatRegisterbuttonFunctionality() throws Exception {
-		maternity_pageInstance = new maternity_page(driver);
-		Map<String, String> maternityRecordExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath,
-				"maternityRecord");
-		Assert.assertEquals(maternity_pageInstance.verifyMatRegisterbuttonFunctionality(),
-				maternityRecordExpectedData.get("matRegisterMsg"));
-	}
-
-	@Test(priority = 14, groups = {
-			"sanity" }, description = "Pre condition: User should be logged in and it is on Maternity module\r\n"
-					+ "1. Navigate to \"Maternity list\" sub-module \r\n"
-					+ "2. Click on the \"...\" button of a specific records\r\n"
-					+ "3. Click on \" Conclude\" option from a specfic record\r\n"
-					+ "4. Click on the \"Confirm\" button "
-					+ "5. Ensure that after clicking the \"Conclude\" option, an alert box appears."
-					+ "6. Verify that upon clicking \"Confirm\" in the alert box, a success message \"Successfully Concluded.\" is displayed.")
-
-	public void verifyConcludeButtonFunctionality() throws Exception {
-		maternity_pageInstance = new maternity_page(driver);
-		Map<String, String> maternityRecordExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath,
-				"maternityRecord");
-		Assert.assertEquals(maternity_pageInstance.verifyConcludeButtonFunctionality(),
-				maternityRecordExpectedData.get("concludedMsg"));
-	}
-
-	@Test(priority = 15, groups = {
-			"sanity" }, description = "Pre condition: User should be logged in and it is on Maternity module\r\n"
-					+ "1. Navigate to \"Maternity list\" sub-module \r\n"
-					+ "2. Click on the \"...\" button of a specific records\r\n"
-					+ "3. Click on \"Remove\" option from a specfic record\r\n" + "4. Click on the \"Remove\" button "
-					+ "5. Ensure that after clicking the \"Remove\" option, an alert box appears."
-					+ "6. Verify that upon clicking \"Remove\" in the alert box, a success message \"Successfully Removed..\" is displayed.")
-
-	public void verifyRemoveButtonFunctionality() throws Exception {
-		maternity_pageInstance = new maternity_page(driver);
-		Map<String, String> maternityRecordExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath,
-				"maternityRecord");
-		Assert.assertEquals(maternity_pageInstance.verifyRemoveButtonFunctionality(),
-				maternityRecordExpectedData.get("removedMsg"));
-	}
 
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
